@@ -1,0 +1,41 @@
+@use '../styles';
+
+$header-h: 112px - 21; // 91
+
+// body {
+//   @apply overflow-x-hidden;
+// }
+
+#container {
+  @apply relative flex flex-col-reverse lg:flex-row;
+  @apply justify-end lg:justify-start gap-400 lg:gap-200;
+  @apply h-full px-200 lg:px-300 py-450;
+
+  > aside {
+    @apply flex flex-col gap-400 justify-between flex-none;
+    @apply lg:w-1800 pb-450 lg:pb-0 lg:pt-750;
+  }
+
+  > div:last-child {
+    @apply flex flex-col gap-100;
+    @apply lg:flex-1 min-w-0;
+
+    header {
+      @apply flex items-center gap-150 flex-none;
+      @apply pb-150 pl-[145.9px] lg:pl-0;
+      height: $header-h;
+
+      .header--button-group {
+        @apply flex items-center gap-100;
+
+        &:first-child {
+          @apply gap-0d50;
+        }
+      }
+    }
+
+    main {
+      @apply lg:pb-450;
+    }
+  }
+}

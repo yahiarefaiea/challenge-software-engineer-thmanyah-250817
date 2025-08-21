@@ -1,0 +1,28 @@
+.podcast-card {
+  @apply flex flex-col gap-100;
+  @apply w-full min-w-1500 p-100 rounded-175;
+  @apply bg-black-200;
+
+  &--thumbnail {
+    @apply w-full;
+  }
+
+  &--content {
+    @apply relative px-0d50;
+    @apply flex flex-col gap-0d28 items-start;
+  }
+
+  &--button-group {
+    @apply absolute top-0 right-0;
+    @apply flex flex-row-reverse gap-100;
+  }
+
+  &--title {
+    @apply text-b1 font-bold;
+  }
+
+  &--title,
+  &--author {
+    @apply line-clamp-2;
+  }
+}

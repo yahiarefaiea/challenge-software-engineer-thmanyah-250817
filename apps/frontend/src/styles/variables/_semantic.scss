@@ -1,0 +1,13 @@
+:root {
+  // typography: font size
+  --h3-font-size: var(--font-size-xl); // 18
+  --b1-font-size: var(--font-size-lg); // 15
+  --b2-font-size: var(--font-size-md); // 14
+  --s1-font-size: var(--font-size-sm); // 13
+
+  // typography: line height
+  --h3-line-height: var(--line-height-200); // 28
+  --b1-line-height: var(--line-height-150); // 21
+  --b2-line-height: var(--line-height-150); // 21
+  --s1-line-height: var(--line-height-100); // 14
+}

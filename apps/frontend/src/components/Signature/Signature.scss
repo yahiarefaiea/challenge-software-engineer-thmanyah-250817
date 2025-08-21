@@ -1,0 +1,11 @@
+#signature {
+  @apply absolute top-300 left-0d50 lg:left-150 h-800;
+
+  svg {
+    @apply h-full;
+
+    .cls-1 {
+      @apply invisible;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.button {
+  @apply relative inline-flex items-center justify-center;
+  @apply cursor-pointer select-none outline-none focus:outline-none;
+  @apply text-b2 font-bold text-center whitespace-nowrap;
+  @apply transition-all duration-200;
+  @apply text-black;
+
+  &:not(.button--icon-button) {
+    @apply bg-black-200;
+  }
+
+  // size
+  &--md {
+    @apply gap-0d75 h-250 px-150 rounded-0d75;
+  }
+  &--sm {
+    @apply gap-0d75 h-200 px-100 rounded-0d75;
+  }
+
+  // interactivity
+  &:not([data-disabled]) {
+    @apply hover:bg-black-300;
+    &[data-focus],
+    &[data-active] {
+      @apply bg-black-500;
+      @apply ring-300 ring-black-300;
+      @apply shadow-[inset_0_0_0_2px_var(--color-black-900)];
+    }
+  }
+}
+
+// icon button
+.button--icon-button {
+  @apply px-0;
+  &.button--md {
+    @apply w-250;
+  }
+  &.button--sm {
+    @apply w-200;
+  }
+}

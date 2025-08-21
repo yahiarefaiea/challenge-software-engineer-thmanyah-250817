@@ -1,0 +1,11 @@
+.divider {
+  @apply border-black-500;
+
+  // orientation
+  &--horizontal {
+    @apply w-full min-w-300 h-0 border-t-100;
+  }
+  &--vertical {
+    @apply h-full min-h-300 w-0 border-l-100;
+  }
+}

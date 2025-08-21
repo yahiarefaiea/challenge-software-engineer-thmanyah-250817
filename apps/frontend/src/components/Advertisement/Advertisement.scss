@@ -1,0 +1,13 @@
+$advertisement-max-width: 28px * 18.5; // 518
+
+.advertisement {
+  @apply flex items-center justify-center;
+  @apply w-full p-150 rounded-175;
+  @apply cursor-pointer select-none;
+  @apply bg-black-100;
+  max-width: $advertisement-max-width;
+
+  h3 {
+    @apply font-regular text-center;
+  }
+}

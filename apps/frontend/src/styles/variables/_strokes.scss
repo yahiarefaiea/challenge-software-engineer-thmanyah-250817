@@ -1,0 +1,22 @@
+:root {
+  // Stroke width
+  --stroke-width-0: 0;
+  --stroke-width-100: 1.19px;
+  --stroke-width-150: 1.5px;
+  --stroke-width-200: 2px;
+  --stroke-width-300: 3px;
+
+  // Border width
+  --border-width-0: var(--stroke-width-0);
+  --border-width-100: var(--stroke-width-100);
+  --border-width-150: var(--stroke-width-150);
+  --border-width-200: var(--stroke-width-200);
+  --border-width-300: var(--stroke-width-300);
+
+  // Ring width
+  --ring-width-0: var(--stroke-width-0);
+  --ring-width-100: var(--stroke-width-100);
+  --ring-width-150: var(--stroke-width-150);
+  --ring-width-200: var(--stroke-width-200);
+  --ring-width-300: var(--stroke-width-300);
+}

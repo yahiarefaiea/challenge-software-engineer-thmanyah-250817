@@ -1,0 +1,34 @@
+@use 'sass:string';
+@use 'sass:list';
+
+@function get-file-extension($filename) {
+  $parts: string.split($filename, '.');
+  @return list.nth($parts, list.length($parts));
+}
+
+@function get-font-format($filename) {
+  $extension: get-file-extension($filename);
+
+  @if $extension == 'otf' {
+    @return 'opentype';
+  } @else if $extension == 'ttf' {
+    @return 'truetype';
+  } @else if $extension == 'woff2' {
+    @return 'woff2';
+  } @else if $extension == 'woff' {
+    @return 'woff';
+  } @else {
+    @return 'opentype';
+  }
+}
+
+@mixin font-face($font-family, $path, $weight, $style) {
+  $format: get-font-format($path);
+
+  @font-face {
+    font-family: $font-family;
+    src: url($path) format("#{$format}");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

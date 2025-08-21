@@ -1,0 +1,12 @@
+.dropdown {
+  @apply relative;
+
+  &--menu {
+    @apply absolute z-50 mt-0d50 p-0d50 rounded-100;
+    @apply bg-[#B3AFA8] shadow-[0_4px_28px_var(--color-black-500)];
+
+    .button {
+      @apply bg-transparent;
+    }
+  }
+}

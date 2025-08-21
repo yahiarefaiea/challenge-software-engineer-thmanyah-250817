@@ -1,0 +1,16 @@
+@use 'variables/spacing';
+@use 'variables/borderRadius';
+@use 'variables/strokes';
+@use 'variables/breakpoints';
+
+@use 'variables/colors';
+@use 'variables/fonts';
+
+@use 'variables/semantic';
+
+@use 'baseStyles';
+@use 'typography';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

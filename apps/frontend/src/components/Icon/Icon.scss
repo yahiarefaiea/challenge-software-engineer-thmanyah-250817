@@ -1,0 +1,12 @@
+:root {
+  --icon-size-md: 18px;
+}
+
+.icon {
+  @apply flex-none text-black-700;
+
+  // size
+  &--md {
+    font-size: var(--icon-size-md);
+  }
+}

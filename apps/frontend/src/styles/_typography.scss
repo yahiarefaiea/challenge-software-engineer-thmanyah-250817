@@ -1,0 +1,37 @@
+@layer base {
+  body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    direction: ltr;
+    @apply font-ibm-plex-sans-arabic text-left;
+    @apply text-b2 font-regular not-italic antialiased;
+    @apply text-black;
+    @apply selection:bg-black selection:text-sugarcane;
+  }
+
+  // Heading
+  .text-h3 {
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-h3;
+  }
+
+  // Body copy, small text
+  p {
+    @apply text-b1;
+  }
+  small {
+    @apply text-s1;
+  }
+
+  .text-s1 {
+    @apply text-black-700;
+  }
+
+  // Bold
+  b,
+  strong {
+    @apply font-bold;
+  }
+}

@@ -1,0 +1,1 @@
+export { resolveComputedStyles } from './resolveComputedStyles';

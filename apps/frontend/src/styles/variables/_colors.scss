@@ -1,0 +1,17 @@
+$color-sugarcane: #E4E0D4; // sugarcane 500
+$color-black: #353238; // black 900
+
+:root {
+  --color-transparent: transparent;
+
+  // sugarcane
+  --color-sugarcane-500: #{$color-sugarcane};
+
+  // black
+  --color-black-900: #{$color-black};
+  --color-black-700: #{rgba($color-black, .84)};
+  --color-black-500: #{rgba($color-black, .56)};
+  --color-black-300: #{rgba($color-black, .35)};
+  --color-black-200: #{rgba($color-black, .28)};
+  --color-black-100: #{rgba($color-black, .105)};
+}

@@ -1,0 +1,24 @@
+.input-wrapper {
+  @apply flex items-center justify-center;
+  @apply min-w-0 w-full border-100 border-black-200;
+  @apply bg-black-100 text-black;
+
+  // size
+  &--sm {
+    @apply h-250 px-[12.81px] py-[5.81px] rounded-0d75;
+  }
+}
+
+// input
+.input {
+  @apply flex-1 min-w-0 outline-none focus:outline-none;
+  @apply bg-transparent;
+
+  &::placeholder {
+    @apply text-black-500;
+  }
+
+  &:not(:placeholder-shown) {
+    @apply font-bold;
+  }
+}

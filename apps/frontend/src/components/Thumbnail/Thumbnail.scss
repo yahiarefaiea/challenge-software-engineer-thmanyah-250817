@@ -1,0 +1,18 @@
+.thumbnail {
+  @apply relative overflow-hidden aspect-square;
+  @apply flex items-center justify-center flex-none;
+  @apply text-s1 text-center;
+  @apply bg-black-200 text-black-700;
+  @apply cursor-default select-none;
+
+  // size
+  &--sm {
+    @apply w-400 rounded-0d50;
+  }
+  &--md {
+    @apply w-800 rounded-0d75;
+  }
+  &--lg {
+    @apply w-[182px] rounded-0d75;
+  }
+}
