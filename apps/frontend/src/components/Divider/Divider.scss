@@ -1,11 +1,11 @@
 .divider {
-  @apply border-black-500;
+  @apply border-[#2E2E38];
 
   // orientation
   &--horizontal {
-    @apply w-full min-w-300 h-0 border-t-100;
+    @apply w-full min-w-300 h-0 border-t-[1px];
   }
   &--vertical {
-    @apply h-full min-h-300 w-0 border-l-100;
+    @apply h-full min-h-300 w-0 border-l-[1px];
   }
 }

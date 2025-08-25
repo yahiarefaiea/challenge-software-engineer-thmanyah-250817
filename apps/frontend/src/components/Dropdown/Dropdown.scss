@@ -2,11 +2,16 @@
   @apply relative;
 
   &--menu {
-    @apply absolute z-50 mt-0d50 p-0d50 rounded-100;
-    @apply bg-[#B3AFA8] shadow-[0_4px_28px_var(--color-black-500)];
+    @apply absolute z-50 mt-0d50 p-0d50 rounded-[5px];
+    background-image: linear-gradient(to top right,#404080,#6B4080);
+    box-shadow: inset 0px 1px 1px rgba(255,255,255,.2),0px 5px 5px hsla(237,25%,12%,50%);
 
     .button {
       @apply bg-transparent;
     }
+  }
+
+  &--button {
+    @apply hover:bg-[rgba(0,0,0,0.2)] px-0d75 !bg-none;
   }
 }

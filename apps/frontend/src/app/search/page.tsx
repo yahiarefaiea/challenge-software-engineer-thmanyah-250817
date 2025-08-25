@@ -8,6 +8,7 @@ import 'keen-slider/keen-slider.min.css';
 import {
   Advertisement,
   Button,
+  Divider,
   Dropdown,
   EpisodeCard,
   PodcastCard,
@@ -99,8 +100,8 @@ export default function Search() {
       {/* Podcast results */}
       {results.podcasts.length > 0 && (
         <section className="flex flex-col gap-150">
-          <div className="flex flex-col md:flex-row gap-0d50 md:gap-200 pl-0d50">
-            <h3 className="font-regular flex-1">
+          <div className="flex flex-col md:flex-row items-center gap-0d50 md:gap-200 px-[20px] pl-[27px]">
+            <h3 className="flex-1 text-b1 font-bold">
               Top podcast results for “<b>{results.query}</b>”
             </h3>
 
@@ -129,8 +130,10 @@ export default function Search() {
             </div>
           </div>
 
+          <Divider />
+
           {podcastLayout === 'scroll' ? (
-            <div ref={sliderRef} className="keen-slider">
+            <div ref={sliderRef} className="keen-slider pl-[20px]">
               {results.podcasts.map((podcast) => (
                 <div
                   key={podcast.id}
@@ -146,7 +149,7 @@ export default function Search() {
               ))}
             </div>
           ) : (
-            <div className="grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-150">
+            <div className="grid xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-150 px-[20px]">
               {results.podcasts.map((podcast) => (
                 <PodcastCard
                   key={podcast.id}
@@ -170,8 +173,8 @@ export default function Search() {
       {/* Episode results */}
       {results.episodes.length > 0 && (
         <section className="flex flex-col gap-150">
-          <div className="flex flex-col md:flex-row gap-0d50 md:gap-200 pl-0d50">
-            <h3 className="font-regular flex-1">
+          <div className="flex flex-col md:flex-row items-center gap-0d50 md:gap-200 px-[20px] pl-[27px]">
+            <h3 className="flex-1 text-b1 font-bold">
               Top episode results for “<b>{results.query}</b>”
             </h3>
 
@@ -204,7 +207,9 @@ export default function Search() {
             </div>
           </div>
 
-          <div className={`grid ${getEpisodeGridCols()} gap-150`}>
+          <Divider />
+
+          <div className={`grid ${getEpisodeGridCols()} gap-150 px-[20px]`}>
             {results.episodes.map((episode) => (
               <EpisodeCard
                 key={episode.id}

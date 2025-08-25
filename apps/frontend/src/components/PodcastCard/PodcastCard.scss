@@ -1,7 +1,6 @@
 .podcast-card {
-  @apply flex flex-col gap-100;
-  @apply w-full min-w-1500 p-100 rounded-175;
-  @apply bg-black-200;
+  @apply flex flex-col gap-[8px];
+  @apply w-full min-w-1500;
 
   &--thumbnail {
     @apply w-full;

@@ -1,32 +1,30 @@
 @use '../styles';
 
-$header-h: 112px - 21; // 91
-
 // body {
 //   @apply overflow-x-hidden;
 // }
 
 #container {
   @apply relative flex flex-col-reverse lg:flex-row;
-  @apply justify-end lg:justify-start gap-400 lg:gap-200;
-  @apply h-full px-200 lg:px-300 py-450;
+  @apply justify-end lg:justify-start;
+  @apply h-full;
 
   > aside {
     @apply flex flex-col gap-400 justify-between flex-none;
-    @apply lg:w-1800 pb-450 lg:pb-0 lg:pt-750;
+    @apply lg:w-[224px] pb-450 lg:pb-0 lg:pt-1200 px-[10px];
+    background-image: linear-gradient(to bottom,#141523,#161727);
   }
 
   > div:last-child {
-    @apply flex flex-col gap-100;
+    @apply flex flex-col gap-[50px];
     @apply lg:flex-1 min-w-0;
 
     header {
-      @apply flex items-center gap-150 flex-none;
-      @apply pb-150 pl-[145.9px] lg:pl-0;
-      height: $header-h;
+      @apply flex items-center gap-[10px] flex-none;
+      @apply py-[8.5px] px-[10px] pl-[145.9px] lg:pl-[10px];
 
       .header--button-group {
-        @apply flex items-center gap-100;
+        @apply flex items-center gap-[5px];
 
         &:first-child {
           @apply gap-0d50;

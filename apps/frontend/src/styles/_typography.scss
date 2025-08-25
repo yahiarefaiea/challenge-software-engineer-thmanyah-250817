@@ -5,8 +5,8 @@
     direction: ltr;
     @apply font-ibm-plex-sans-arabic text-left;
     @apply text-b2 font-regular not-italic antialiased;
-    @apply text-black;
-    @apply selection:bg-black selection:text-sugarcane;
+    @apply selection:bg-[#FFF] selection:text-[#161727];
+    color: #FFF;
   }
 
   // Heading
@@ -26,7 +26,7 @@
   }
 
   .text-s1 {
-    @apply text-black-700;
+    @apply text-[#777];
   }
 
   // Bold

@@ -1,11 +1,11 @@
 .input-wrapper {
   @apply flex items-center justify-center;
-  @apply min-w-0 w-full border-100 border-black-200;
-  @apply bg-black-100 text-black;
+  @apply min-w-0 w-full border-[1px] border-[#50515D];
+  @apply bg-transparent text-[#FFF];
 
   // size
   &--sm {
-    @apply h-250 px-[12.81px] py-[5.81px] rounded-0d75;
+    @apply h-[33px] px-100 py-0d50 rounded-[10px];
   }
 }
 
@@ -15,7 +15,7 @@
   @apply bg-transparent;
 
   &::placeholder {
-    @apply text-black-500;
+    @apply text-[#777];
   }
 
   &:not(:placeholder-shown) {

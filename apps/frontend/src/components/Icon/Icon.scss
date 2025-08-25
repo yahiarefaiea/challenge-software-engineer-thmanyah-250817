@@ -1,9 +1,9 @@
 :root {
-  --icon-size-md: 18px;
+  --icon-size-md: 20px;
 }
 
 .icon {
-  @apply flex-none text-black-700;
+  @apply flex-none text-[#8A8B93];
 
   // size
   &--md {

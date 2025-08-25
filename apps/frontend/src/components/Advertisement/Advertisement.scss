@@ -2,10 +2,10 @@ $advertisement-max-width: 28px * 18.5; // 518
 
 .advertisement {
   @apply flex items-center justify-center;
-  @apply w-full p-150 rounded-175;
+  @apply w-full p-150 rounded-[5px];
   @apply cursor-pointer select-none;
-  @apply bg-black-100;
   max-width: $advertisement-max-width;
+  background-color: #21223B;
 
   h3 {
     @apply font-regular text-center;

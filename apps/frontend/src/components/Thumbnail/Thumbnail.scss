@@ -7,12 +7,12 @@
 
   // size
   &--sm {
-    @apply w-400 rounded-0d50;
+    @apply w-400 rounded-[3px];
   }
   &--md {
-    @apply w-800 rounded-0d75;
+    @apply w-800 rounded-[3px];
   }
   &--lg {
-    @apply w-[182px] rounded-0d75;
+    @apply w-[182px] rounded-[3px];
   }
 }

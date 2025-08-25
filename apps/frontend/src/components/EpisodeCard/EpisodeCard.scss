@@ -1,7 +1,7 @@
 .episode-card {
   @apply flex gap-100 items-start;
-  @apply w-full min-w-1500 p-100 rounded-175;
-  @apply bg-black-200;
+  @apply w-full min-w-1500 p-100 rounded-[5px];
+  @apply bg-[#21223B];
 
   &--content {
     @apply relative w-full;
@@ -35,7 +35,7 @@
     }
   }
   &--sm {
-    @apply items-center p-0d50 rounded-100;
+    @apply items-center p-0d50 rounded-[5px];
     .episode-card {
       &--content {
         @apply flex-row-reverse items-center;

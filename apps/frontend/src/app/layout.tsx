@@ -4,7 +4,7 @@ import {
   Divider,
   Header,
   IconInitializer,
-  Noise,
+  // Noise,
   Signature,
 } from "@/components";
 import { SearchProvider } from "@/context/SearchContext";
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body>
         <SearchProvider>
           <IconInitializer />
-          <Noise />
+          {/* <Noise /> */}
 
           <div id="container">
             <Signature />

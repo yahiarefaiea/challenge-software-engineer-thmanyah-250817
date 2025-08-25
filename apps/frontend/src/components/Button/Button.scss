@@ -1,41 +1,51 @@
 .button {
   @apply relative inline-flex items-center justify-center;
   @apply cursor-pointer select-none outline-none focus:outline-none;
-  @apply text-b2 font-bold text-center whitespace-nowrap;
+  @apply text-b2 text-center whitespace-nowrap;
   @apply transition-all duration-200;
-  @apply text-black;
+  @apply text-[#FFF];
 
   &:not(.button--icon-button) {
-    @apply bg-black-200;
+    background-image: linear-gradient(to bottom,#40678c,#2c5378);
   }
 
   // size
-  &--md {
-    @apply gap-0d75 h-250 px-150 rounded-0d75;
-  }
-  &--sm {
-    @apply gap-0d75 h-200 px-100 rounded-0d75;
-  }
+  @apply gap-0d75 h-[30px] px-[12px] rounded-[5px];
 
   // interactivity
-  &:not([data-disabled]) {
-    @apply hover:bg-black-300;
+  &:not(.button--icon-button):not([data-disabled]) {
+    &:not([data-focus]):not([data-active]) {
+      &[data-hover] {
+        background-image: linear-gradient(to bottom,#5081AE,#386997);
+      }
+    }
     &[data-focus],
     &[data-active] {
-      @apply bg-black-500;
-      @apply ring-300 ring-black-300;
-      @apply shadow-[inset_0_0_0_2px_var(--color-black-900)];
+      background-image: linear-gradient(to bottom,#345371,#254463);
     }
   }
 }
 
 // icon button
 .button--icon-button {
-  @apply px-0;
+  @apply px-0 rounded-circle;
+
+  &:hover .icon {
+    @apply text-[#FFF];
+  }
+
   &.button--md {
     @apply w-250;
   }
   &.button--sm {
     @apply w-200;
+  }
+
+  &:not([data-disabled]) {
+    &[data-hover],
+    &[data-focus],
+    &[data-active] {
+      background-color: #21223B;
+    }
   }
 }

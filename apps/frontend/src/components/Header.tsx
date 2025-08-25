@@ -67,7 +67,7 @@ export const Header = () => {
       </form>
 
       <div className="header--button-group !hidden sm:!flex">
-        <Button>Login</Button>
+        <Button>Log in</Button>
         <Button>Sign up</Button>
 
         <Dropdown
